@@ -12,6 +12,10 @@ npm run dev        # http://localhost:8080
 
 Needs Node.js 20+ (22 recommended). Copy `.env.example` to `.env` and add your Supabase project URL and publishable key. Never commit `.env` or put a service-role key in a `VITE_` variable.
 
+## Deploy to Vercel
+
+The project uses the Nitro Vite plugin to produce Vercel-compatible server output for TanStack Start. In Vercel, set the project root to this repository's directory and use the **TanStack Start** framework preset. Leave the build command and output directory unset so Vercel can detect the generated Nitro output. Add the required Supabase environment variables in the Vercel project settings before deploying.
+
 ## Setup checklist
 
 - **WhatsApp number**: edit `WHATSAPP_NUMBER` in `src/lib/products.ts` (country code + digits, no `+`).
