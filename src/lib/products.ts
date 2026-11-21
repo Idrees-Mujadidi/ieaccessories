@@ -6,7 +6,7 @@ export type Product = Tables<"products">;
 export const CATEGORIES = ["Power Banks", "Chargers", "Phone Cases"] as const;
 
 // Shop contact — change to your real WhatsApp number (country code, digits only).
-export const WHATSAPP_NUMBER = "9370555002";
+export const WHATSAPP_NUMBER = "93780555002";
 export const INSTAGRAM_URL = "https://instagram.com/";
 
 const priceFormatter = new Intl.NumberFormat("en-AF", {
